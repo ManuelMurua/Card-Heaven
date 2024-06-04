@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Galeria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Galeria</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <ion-app>
+      <ion-menu contentId="main-content">
+        <ion-header>
+          <ion-toolbar color="tertiary">
+            <ion-title>Menu Content</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-list>
+            <ion-item>
+              <ion-button expand="full" color="primary" routerLink="/magic">Magic</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button expand="full" color="secondary" routerLink="/Pokemon">Pokemon</ion-button>
+            </ion-item>
+            <ion-item>
+              <ion-button expand="full" color="tertiary" routerLink="/Yugioh">Yugioh</ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          Tap the button in the toolbar to open the menu.
+        </ion-content>
+      </div>
+    </ion-app>
+
+    
+  </div>
+  <ion-card class="custom-card">
+    <ion-card-content>
+      <p class="custom-text">Explora nuestra colección de tarjetas de Pokemon, Yugioh y Magic: The Gathering en Card Heaven. Estamos encantados de tenerte aquí y esperamos que disfrutes navegando por nuestra amplia selección de cartas.</p>
+      <p class="custom-text">En Card Heaven, encontrarás una variedad de tarjetas de colección, desde Pokémon clásicos hasta cartas de última generación de Magic: The Gathering. Ya seas un coleccionista experimentado o alguien que está empezando su viaje en el mundo del juego de cartas, estamos seguros de que encontrarás algo que te fascine.</p>
+      <p class="custom-text">Además de explorar nuestra colección, también puedes participar en nuestra comunidad, donde puedes compartir tus hallazgos, intercambiar tarjetas con otros coleccionistas y discutir las últimas noticias y estrategias del mundo de los juegos de cartas.</p>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-button expand="block" routerLink="/pokemon">
+    Ver tarjetas de Pokemon
+  </ion-button>
+  <ion-button expand="block" routerLink="/yugioh">
+    Ver tarjetas de Yugioh
+  </ion-button>
+  <ion-button expand="block" routerLink="/magic">
+    Ver tarjetas de Magic: The Gathering
+  </ion-button>
+  
+
+</ion-content>

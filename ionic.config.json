@@ -1,0 +1,7 @@
+{
+  "name": "Card_heaven_1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
